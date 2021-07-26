@@ -79,7 +79,42 @@ public class VacunasApp {
         return count;
     }
 
-//    public Integer getTotalPersonasVacunadasRango(int rango) {
-//
-//    }
+    public Integer getTotalPersonasVacunadasRango(int rango) {
+        int count = 0;
+        switch (rango) {
+            case 1:
+                for (CentroVacunacion centroVacunacion : centrosVacunacion) {
+                    count += centroVacunacion.getPersonasVacunadasRango(18, 39);
+                }
+                break;
+            case 2:
+                for (CentroVacunacion centroVacunacion : centrosVacunacion) {
+                    count += centroVacunacion.getPersonasVacunadasRango(40, 49);
+                }
+                break;
+            case 3:
+                for (CentroVacunacion centroVacunacion : centrosVacunacion) {
+                    count += centroVacunacion.getPersonasVacunadasRango(50, 59);
+                }
+                break;
+            case 4:
+                for (CentroVacunacion centroVacunacion : centrosVacunacion) {
+                    count += centroVacunacion.getPersonasVacunadasRango(60, 69);
+                }
+                break;
+            case 5:
+                for (CentroVacunacion centroVacunacion : centrosVacunacion) {
+                    count += centroVacunacion.getPersonasVacunadasRango(70, 79);
+                }
+                break;
+            case 6:
+                for (CentroVacunacion centroVacunacion : centrosVacunacion) {
+                    count += centroVacunacion.getPersonasVacunadasRango(80, 1000);
+                }
+                break;
+            default:
+                return 0;
+        }
+        return count;
+    }
 }
