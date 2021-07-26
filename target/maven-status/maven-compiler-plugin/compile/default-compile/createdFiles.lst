@@ -1,0 +1,7 @@
+vacunacion/controller/LoginController.class
+vacunacion/model/Persona.class
+vacunacion/model/CentroVacunacion.class
+vacunacion/model/Usuario.class
+vacunacion/model/StringFormatter.class
+vacunacion/VacunasApp.class
+vacunacion/ui/Menu.class

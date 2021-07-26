@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="vacunacion.VacunasAppTest" time="0.672" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="16"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/test-classes:/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/classes:/Users/sebastianknell/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/sebastianknell/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/sebastianknell/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/sebastianknell/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/sebastianknell/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/sebastianknell/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sebastianknell/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/sebastianknell/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/sebastianknell/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/sebastianknell/.m2/repository/com/google/guava/guava/25.1-android/guava-25.1-android.jar:/Users/sebastianknell/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/sebastianknell/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sebastianknell/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sebastianknell/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sebastianknell/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sebastianknell/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="16"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PE"/>
+    <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/surefire/surefirebooter11782111074173973274.jar /Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/surefire 2021-07-26T17-52-37_939-jvmRun1 surefire10988205729301577609tmp surefire_05290915006474108501tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/test-classes:/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/classes:/Users/sebastianknell/.m2/repository/org/testng/testng/7.3.0/testng-7.3.0.jar:/Users/sebastianknell/.m2/repository/com/beust/jcommander/1.78/jcommander-1.78.jar:/Users/sebastianknell/.m2/repository/org/apache/ant/ant/1.10.3/ant-1.10.3.jar:/Users/sebastianknell/.m2/repository/org/apache/ant/ant-launcher/1.10.3/ant-launcher-1.10.3.jar:/Users/sebastianknell/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/sebastianknell/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/sebastianknell/.m2/repository/com/google/inject/guice/4.2.2/guice-4.2.2-no_aop.jar:/Users/sebastianknell/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/sebastianknell/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/sebastianknell/.m2/repository/com/google/guava/guava/25.1-android/guava-25.1-android.jar:/Users/sebastianknell/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/sebastianknell/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sebastianknell/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sebastianknell/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sebastianknell/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sebastianknell/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sebastianknell"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2021-04-20"/>
+    <property name="java.home" value="/usr/local/Cellar/openjdk/16.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2/target/surefire/surefirebooter11782111074173973274.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="16.0.1+0"/>
+    <property name="user.name" value="sebastianknell"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.4"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/sebastianknell/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/67/wtz42wrs5zg8qfw38j2cz9300000gn/T/"/>
+    <property name="java.version" value="16.0.1"/>
+    <property name="user.dir" value="/Users/sebastianknell/Documents/UTEC/2021-1/Ingenieria de Software 1/examen2"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/sebastianknell/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="16.0.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="60.0"/>
+  </properties>
+  <testcase name="mainTest on mainTest(vacunacion.VacunasAppTest)" classname="vacunacion.VacunasAppTest" time="0.046"/>
+</testsuite>

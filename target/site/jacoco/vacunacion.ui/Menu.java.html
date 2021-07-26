@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Menu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">examen2</a> &gt; <a href="index.source.html" class="el_package">vacunacion.ui</a> &gt; <span class="el_source">Menu.java</span></div><h1>Menu.java</h1><pre class="source lang-java linenums">package vacunacion.ui;
+
+import vacunacion.controller.LoginController;
+
+import java.util.Scanner;
+
+<span class="nc" id="L7">public class Menu {</span>
+<span class="nc" id="L8">    private Scanner scanner = new Scanner(System.in);</span>
+
+    void print(String msg) {
+<span class="nc" id="L11">        System.out.println(msg);</span>
+<span class="nc" id="L12">    }</span>
+
+    void clear() {
+<span class="nc" id="L15">        System.out.print(&quot;\033[H\033[2J&quot;);</span>
+<span class="nc" id="L16">        System.out.flush();</span>
+<span class="nc" id="L17">    }</span>
+
+    public void printOptions1() {
+<span class="nc" id="L20">        print(&quot;1. Avance de la vacunacion&quot;);</span>
+<span class="nc" id="L21">        print(&quot;2. Cobertura de la vacunacion&quot;);</span>
+<span class="nc" id="L22">        print(&quot;3. Numeros de centros de vacunacion&quot;);</span>
+<span class="nc" id="L23">        print(&quot;4. Número de personas vacunadas parcialmente&quot;);</span>
+<span class="nc" id="L24">        print(&quot;5. Número de personas vacunadas completamente&quot;);</span>
+<span class="nc" id="L25">    }</span>
+
+    public void execute() {
+        boolean validLogin;
+        do {
+<span class="nc" id="L30">            print(&quot;Iniciar sesion: Ingresa tu usuario y contraseña&quot;);</span>
+<span class="nc" id="L31">            print(&quot;Usuario: &quot;);</span>
+<span class="nc" id="L32">            String username = scanner.nextLine();</span>
+<span class="nc" id="L33">            print(&quot;Usuario: &quot;);</span>
+<span class="nc" id="L34">            String password = scanner.nextLine();</span>
+<span class="nc" id="L35">            validLogin = LoginController.login(username, password);</span>
+<span class="nc bnc" id="L36" title="All 2 branches missed.">        } while (!validLogin);</span>
+
+<span class="nc" id="L38">        clear();</span>
+
+        int option;
+        do {
+<span class="nc" id="L42">            print(&quot;1. Administrar centos de vacunacion&quot;);</span>
+<span class="nc" id="L43">            print(&quot;2. Obtener informacion&quot;);</span>
+<span class="nc" id="L44">            option = scanner.nextInt();</span>
+<span class="nc bnc" id="L45" title="All 4 branches missed.">        } while (option != 2 &amp;&amp; option != 1);</span>
+
+<span class="nc bnc" id="L47" title="All 3 branches missed.">        switch (option) {</span>
+            case 1:
+<span class="nc" id="L49">                print(&quot;1. Dar de alta a un centro de vacunacion&quot;);</span>
+<span class="nc" id="L50">                print(&quot;2. Dar de baja a un centro de vacunacion&quot;);</span>
+<span class="nc" id="L51">                break;</span>
+            case 2:
+<span class="nc" id="L53">                printOptions1();</span>
+            default:
+<span class="nc" id="L55">                print(&quot;Ocurrio un error&quot;);</span>
+        }
+
+<span class="nc" id="L58">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
